@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <strong>ResumePro</strong>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume Builder</a>
+        </div>
+    </nav>
+
+  <h1>Job Description Analyzer</h1>
+
+  <p>Evaluate how well your resume matches a job role by analyzing keyword alignment and identifying missing skills. Get a match score, detect gaps, and improve your resume strategically before applying.</p>
+
+  <textarea id="jobDescription" placeholder="Paste Job Description here..." oninput="autoSaveJD()"></textarea>
+  <button type="button" onclick="analyzeResume()">Analyze Resume</button>
+  <button onclick="clearJD()">Clear Job Description</button>
+
+  <div id="analysisResult" style="margin-top: 15px; font-weight: 500;"></div>
+
+  <script src="script.js"></script>
+
+  <script>loadSavedJD();</script>
+
+</body>
+</html>
